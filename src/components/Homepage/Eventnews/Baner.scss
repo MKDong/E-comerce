@@ -1,0 +1,80 @@
+.Baner-wapper{
+   div{
+    height: 100%;
+    .slick-list{
+      border-radius: 2.5rem;
+      // box-shadow: 8px 10px 11px 2px #797778;
+    }
+  }
+  ul{bottom:1.4rem;
+  li{
+    margin: 0 0.625rem;
+    button:before{
+      font-size:1rem;
+      color: #fff !important; 
+    }
+  }}
+  .slick-prev, .slick-next {
+    font-size: 0.9375rem !important;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s;
+  }
+   .slick-prev:before, .slick-next:before  {
+    content: '' !important;
+  }
+  .slick-next{
+    position: absolute;
+    right: 2.5rem;
+  } .slick-prev{
+    position: absolute;
+    left: 2.5rem;
+    z-index: 10;
+  }
+  &:hover{
+    .slick-prev, .slick-next{
+      opacity: 1;
+    }
+    .slick-next{
+      right: 1rem;
+    } 
+    .slick-prev{
+      left: 1rem;
+    }
+  }
+  img{
+    border-radius: 0 2.5rem 2.5rem 0;
+  }
+  .info{
+    padding: 20px 20px;
+    height: 100%;
+    width:50%;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    color: #fff;display: flex;
+    gap: 5px;
+    flex-direction: column;
+    div{
+      
+      &:nth-child(1){
+        height: 30%;
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+      &:nth-child(2){
+        height: 60%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+      }
+    }
+  }
+  .SUKIEN{
+    display: flex  !important;
+    gap: 2rem;
+    img{
+      width: 50%;
+    }
+  }
+}

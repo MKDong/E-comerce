@@ -1,0 +1,134 @@
+/* bài viết chi tiết Detail.jsx */
+.Detail-chitiet {
+  width: 90%;
+  display: flex;
+  background-color: #36363a;
+  color: white;
+}
+/* bài viết chi tiết */
+.posts {
+  width: 70%;
+}
+.title h2 {
+  margin: 0;
+}
+.title p {
+  font-size: 10px;
+  margin: 10px;
+  font-weight: 700;
+}
+.content img {
+  width: 100%;
+}
+/* ------------------------- */
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.frame {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame:hover {
+  background: rgb(65, 65, 167);
+}
+.logo-link {
+  color: white;
+}
+/* sanr phẩm liên quan */
+.Related-posts {
+  width: 100%;
+}
+.link-carousel {
+  color: white;
+}
+.img-carousel {
+  width: 100%;
+  text-align: center;
+}
+.img-carousel:hover p {
+  color: yellow;
+}
+.img-carousel img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slick-prev {
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  opacity: 0;
+  transition: all linear 0.6s;
+}
+.slick-next {
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  opacity: 0;
+  transition: all linear 0.6s;
+}
+/*  */
+.slick-next:before {
+  font-weight: 900;
+  font-size: 30px;
+}
+.carousel:hover .slick-next {
+  opacity: 1;
+  right: 0;
+}
+/*  */
+.slick-prev:before {
+  font-weight: 900;
+  font-size: 30px;
+}
+.carousel:hover .slick-prev {
+  opacity: 1;
+  left: 0;
+}
+
+/*  */
+
+/* sản phẩm mới */
+.new-products {
+  width: 30%;
+  text-align: center;
+}
+.img-content {
+  width: 90%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.new-img {
+  width: 50%;
+  margin: 5px;
+}
+.img-api {
+  width: 100%;
+}
+.oldPrice {
+  text-decoration: line-through;
+  margin: 0;
+  font-size: 15px;
+}
+.newPrice {
+  margin: 0;
+  font-size: 20px;
+  color: orange;
+}
+.name:hover {
+  color: yellow;
+}
+.link-newproduct {
+  text-decoration: none;
+  color: white;
+}

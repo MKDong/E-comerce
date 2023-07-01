@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: rgb(81, 76, 76);
+  display: flex;
+  place-items: center;
+  background-color: #363131;
+  position: relative;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

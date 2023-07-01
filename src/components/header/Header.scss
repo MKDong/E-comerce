@@ -1,0 +1,249 @@
+.header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+}
+
+.mainHeader {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    object-fit: cover;
+    height: 80px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    a {
+        margin: 0 5px;
+    }
+}
+.header {
+    font-size: 18px;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header a:focus {
+    font-weight: bolder;
+}
+.barModal a {
+    color: #334862;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+}
+.search {
+    position: relative;
+    width: 350px;
+}
+.ipSearch {
+    width: 90%;
+    padding: 3px 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #334862;
+    margin-left: -30px;
+}
+.btnSearch {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 10%;
+    background-color: rgb(176, 135, 59);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+.cart {
+    font-size: 40px;
+    cursor: pointer;
+    a {
+        display: block;
+    }
+}
+.result {
+    background-color: #c3cbd6;
+    font-size: 30px;
+}
+.modalLeft {
+    position: relative;
+    z-index: 100;
+    height: 100vh;
+}
+.barModal {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 100vh;
+    width: 73%;
+    z-index: 10;
+}
+.close {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    color: rgb(202, 182, 182);
+    font-size: 30px;
+    z-index: 11;
+}
+
+.ant-list-item-meta {
+    width: 350px;
+    padding: 10px;
+}
+#tippy-2 {
+    width: 350px;
+    z-index: 99;
+}
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+//breadcrumbs
+.bread {
+    width: 80%;
+    font-size: 30px;
+    margin: 20px auto;
+}
+.bread > * {
+    display: inline-block;
+    margin-right: 10px;
+}
+.bread a {
+    text-decoration: none;
+}
+.bread .crumb::after {
+    content: ">>";
+    color: #c0b6b6;
+    margin-left: 10px;
+}
+.bread .crumb:last-child:after {
+    display: none;
+}
+.bread .crumb a {
+    color: #ddd;
+}
+//menu
+
+.menu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ddd;
+    text-align: center;
+    position: relative;
+}
+.sub {
+    background-color: #1a1818f9;
+    border: 1px solid orange;
+    width: 400px;
+    position: absolute;
+    display: none;
+    z-index: 10;
+}
+.sub a {
+    color: rgb(232, 222, 222);
+    font-size: 20px;
+    display: inline-block;
+}
+
+.menu:hover .sub {
+    display: block;
+}
+.sub a:hover {
+    color: #edc233;
+    background-color: #334862;
+}
+.login {
+    background-color: #c8932b;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+.logout {
+    background-color: #c6392f;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.ant-form-item-explain-error {
+    font-size: 30px;
+    padding: 5px 0;
+}
+//dropdown
+.drop {
+    color: orange;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .none {
+        display: none;
+    }
+    .logo img {
+        width: 100px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .cart {
+        font-size: 25px;
+    }
+    .search {
+        width: 200px;
+        margin: 30px;
+    }
+    .ipSearch {
+        width: 80%;
+        font-size: 15px;
+    }
+    .btnSearch {
+        width: 20%;
+        font-size: 15px;
+    }
+    .ant-list-item-meta {
+        width: 240px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    #tippy-2 {
+        width: 200px;
+    }
+    .menu {
+        color: #334862;
+        font-size: 18px;
+        display: block;
+    }
+    .ipSearch {
+        margin-left: 0;
+    }
+    .login .logout {
+        width: 100px;
+        height: 80px;
+        padding: 5px;
+        font-size: 17px;
+    }
+}

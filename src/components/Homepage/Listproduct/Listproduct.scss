@@ -1,0 +1,92 @@
+.Listproduct {
+    .Allproduct {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(140deg, #c0a8a2 0%, #e2e67a 50%, #bfd641 75%);
+        font-weight: 900;
+        font-size: 1.25rem;
+        color: #806666;
+        border-radius: 3.125rem 0.625rem 3.125rem 0.625rem;
+    }
+    div {
+        &:nth-child(2) {
+            gap: 2rem;
+            div {
+                height: 25rem;
+                background: #fff;
+                color: black;
+                display: flex;
+                padding-top: 0.813rem;
+                border-radius: 1.5rem;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+                div {
+                    &:nth-child(1) {
+                        width: 90%;
+                        height: 70%;
+                        padding-top: 0;
+                        div {
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            img {
+                                border-radius: 1.5rem;
+                                object-fit: cover;
+                                transition: all 0.5s;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        height: 55%;
+                        width: 100%;
+                        padding: 0.813rem 0.813rem 0 0.813rem;
+                        font-size: 0.875rem;
+                        text-align: left;
+                        align-items: start;
+                    }
+                }
+                .newprice {
+                    padding-top: 0;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    width: 100%;
+                    height: 30%;
+                    text-align: left;
+                    align-items: start;
+                    padding: 0 0.813rem 0 0.813rem;
+                    color: #ff0000;
+                }
+                .oldprice {
+                    padding-top: 0;
+                    font-size: 12px;
+                    width: 100%;
+                    text-align: left;
+                    align-items: start;
+                    padding: 0 0.813rem 0 0.813rem;
+                }
+            }
+        }
+    }
+    .hover:hover img {
+        transform: scale(1.2);
+    }
+}
+.Pagination {
+    color: #fff;
+    text-align: center;
+    li {
+        color: #fff !important;
+        button {
+            color: #fff !important;
+        }
+        a {
+            color: #fff !important;
+        }
+        &.ant-pagination-item-active {
+            background-color: #000 !important;
+        }
+    }
+}

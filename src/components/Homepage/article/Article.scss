@@ -1,0 +1,87 @@
+.Article {
+    // box-shadow: 8px 10px 11px 2px #797778;
+    div {
+        .ant-tabs {
+            height: 100%;
+            .ant-tabs-content {
+                height: 100%;
+                .ant-tabs-tabpane {
+                    padding: 0 1rem;
+                    color: #fff;
+                    height: 100%;
+                    div {
+                        height: 24%;
+                        display: flex;
+                        padding: 0.625rem 0;
+                        border-bottom: 1px dotted #fff;
+                        div {
+                            &:nth-child(1) {
+                                height: 100%;
+                                overflow: hidden;
+                                width: 30%;
+                                padding: 0;
+                                border-bottom: none;
+                                img {
+                                    height: 100%;
+                                    width: 90%;
+                                    object-fit: cover;
+                                }
+                            }
+                            &:nth-child(2) {
+                                width: 70%;
+                                height: 100%;
+                                padding: 0;
+                                border-bottom: none;
+                                display: flex;
+                                flex-direction: column;
+                                div {
+                                    width: 100%;
+                                    &:nth-child(1) {
+                                        height: 7.5rem;
+                                        text-align: start;
+                                        overflow: hidden;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                    }
+                                    &:nth-child(2) {
+                                        text-align: start;
+                                        opacity: 0.5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ant-tabs-nav-wrap {
+            height: 2.5rem;
+            .ant-tabs-nav-list {
+                width: 100%;
+                .ant-tabs-tab {
+                    width: 50%;
+                    margin: 0;
+                    border-radius: 2.5rem 0 0 0;
+                    text-align: center;
+                    font-size: 0.75rem;
+                    .ant-tabs-tab-btn {
+                        width: 100%;
+                        color: #fff;
+                    }
+                    &:nth-child(2) {
+                        border-radius: 0 2.5rem 0 0;
+                    }
+                }
+                .ant-tabs-ink-bar {
+                    height: 0.188rem;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+        background-image: linear-gradient(to right, rgb(212, 182, 182), rgb(27, 27, 26));
+        color: white;
+    }
+}

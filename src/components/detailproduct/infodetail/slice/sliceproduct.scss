@@ -1,0 +1,86 @@
+.Sliceproductdetail {
+    div {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #fff;
+        &:first-child {
+            margin-bottom: 0.8rem;
+        }
+    }
+    div {
+        height: auto;
+    }
+    ul {
+        bottom: -3 rem !important;
+        li {
+            margin: 0 0.625rem;
+            button:before {
+                font-size: 0.7rem;
+                color: #fff !important;
+            }
+        }
+    }
+    .slick-slider {
+        height: 350px;
+        width: 95%;
+        .slick-dots {
+            justify-content: center;
+            li {
+                width: 20px;
+            }
+        }
+        .slick-list {
+            height: 100%;
+            .slick-track {
+                display: flex;
+                gap: 20px;
+                height: 100%;
+                .slick-slide {
+                    height: 100%;
+                    div {
+                        height: 70%;
+                        margin-bottom: 0;
+                        div {
+                            height: 100%;
+                            div {
+                                height: auto;
+                                margin-top: 10px;
+                                p {
+                                    font-size: 15px;
+                                }
+                                span {
+                                    font-size: 20px;
+                                    font-weight: 900;
+                                    color: #ffae8b;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .slick-prev,
+        .slick-next {
+            font-size: 0.675rem !important;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transition: all 1s;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+            content: "" !important;
+        }
+        .slick-next {
+            position: absolute;
+            right: 2.5rem;
+            top: 40%;
+        }
+        .slick-prev {
+            position: absolute;
+            top: 40%;
+            left: 2.5rem;
+            z-index: 10;
+        }
+    }
+}

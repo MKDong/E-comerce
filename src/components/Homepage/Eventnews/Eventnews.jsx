@@ -1,4 +1,3 @@
-import React from "react";
 import "./Event.scss";
 export default function Eventnews() {
   return (

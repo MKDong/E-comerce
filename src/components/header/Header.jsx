@@ -107,8 +107,8 @@ export default function Header({ reloadHeader }) {
           )}
         </div>
       </div>
-      <div style={{ marginTop: "80px" }}>
-        <Breadcrumbs></Breadcrumbs>
+      <div style={{ marginTop: "80px", width: "100vw" }}>
+        {/* <Breadcrumbs></Breadcrumbs> */}
       </div>
     </>
   );

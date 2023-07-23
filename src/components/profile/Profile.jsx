@@ -34,7 +34,6 @@ export default function Profile(){
     const saveImg = ()=>{
         setStoreImg([...storeImg,{imgCrop}])
     }
-    console.log(storeImg);
     const imgProfile = storeImg.map((item)=>{
         return item.imgCrop
     })

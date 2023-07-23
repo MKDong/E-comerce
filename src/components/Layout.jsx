@@ -13,9 +13,8 @@ export default function Layout(){
     }
     return<>
         <Header reloadHeader={reload} ></Header>
-            <Outlet context={[x,setX]}>
-            </Outlet>
-        <Footer></Footer>
+            <Outlet context={[x,setX]}/>
+        <Footer/>
     </>
         
 }

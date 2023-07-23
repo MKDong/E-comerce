@@ -1,8 +1,5 @@
-import React from "react";
-
+/* eslint-disable react/prop-types */
 export default function Nameproductandprice({ ArrBuy }) {
-  console.log(ArrBuy);
-  console.log(ArrBuy[0].attributes.name);
   let Price = parseInt(ArrBuy[0].attributes.price);
 
   return (
@@ -17,7 +14,7 @@ export default function Nameproductandprice({ ArrBuy }) {
         </span>
       </div>
       <div>
-        <i class="fa-solid fa-gift"></i>
+        <i className="fa-solid fa-gift"></i>
         <span>Khuyến mại</span>
       </div>
       <div className="listgift">

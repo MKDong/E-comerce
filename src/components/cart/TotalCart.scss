@@ -1,0 +1,51 @@
+.button-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 12px;
+  gap: 8px;
+  height: 40px;
+  width: 80%;
+  border: none;
+  background: #fc3f1e;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .lable {
+    line-height: 22px;
+    font-size: 17px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+
+  img{
+    width: 40px;
+  }
+}
+
+.button-buy:hover {
+  background: #4cbaff;
+}
+
+.button-buy:hover .svg-icon {
+  animation: slope 1s linear infinite;
+}
+
+.tottal_custtom{
+  border-top: 2px solid #b6b6b6;
+  border-bottom: 2px solid #b6b6b6;
+}
+
+@keyframes slope {
+  0% {
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+  }
+}

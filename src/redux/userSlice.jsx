@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createSlice } from '@reduxjs/toolkit'
 const dataUser = localStorage.getItem('user')
 const ObjDataUser = JSON.parse(dataUser)

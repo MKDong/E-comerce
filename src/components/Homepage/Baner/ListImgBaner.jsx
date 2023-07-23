@@ -53,7 +53,6 @@ export default function ListImgBaner() {
         console.log(error);
       });
   }, []);
-  console.log(listbanner);
   return (
     <div className="w-full h-full Baner-wapper">
       <Slider {...settings}>

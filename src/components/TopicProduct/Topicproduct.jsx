@@ -19,7 +19,6 @@ const [x,setX]=useOutletContext()
   const newarr = [...getarrnew];
   const param = useParams();
   const [total, setTotal] = useState(0);
-  console.log('render', getarrnew);
   useEffect(() => {
     const fetchData = async () => {
       try {

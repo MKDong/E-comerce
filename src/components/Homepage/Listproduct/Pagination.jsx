@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changepage } from "../../../redux/SliceProduct";
 import "./Listproduct.scss";
 const onChange = (pageNumber) => {
-  console.log("Page: ", pageNumber);
+  // console.log("Page: ", pageNumber);
 };
 
 export default function Paginationproduct() {

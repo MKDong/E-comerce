@@ -11,14 +11,11 @@ export default function Infordetail() {
   let ArrdatafromSession = JSON.parse(sessionStorage.getItem("dataSessions"));
   const [Searchparam] = useSearchParams();
   const idParam = Searchparam.get("id");
-  console.log(idParam);
-  console.log(ArrdatafromSession);
   const Arrdatadetail = ArrdatafromSession.filter(
     (item) => item.id === parseInt(idParam)
   );
-  console.log(Arrdatadetail);
   const Arrdataconcat = Arrdatadetail.concat(Arrdatadetail);
-  console.log(Arrdataconcat);
+  // console.log(Arrdatadetail, "Arrdatadetail");
   return (
     <div className="grid grid-cols-6">
       <div className="col-span-4 border-r-[1px]">

@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import userSlice from './userSlice.js'
+import userSlice from './userSlice'
 import Pagination from "./SliceProduct";
 import Sortproduct from "./Slicesort";
-import cartSlice from './cartSlice.js';
+import cartSlice from './cartSlice';
 
 export const store = configureStore({
   reducer:{

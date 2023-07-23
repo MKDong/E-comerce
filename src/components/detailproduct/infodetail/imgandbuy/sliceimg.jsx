@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,17 +31,6 @@ export default function Sliceimg({ getArr }) {
       </div>
     );
   };
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 311000,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: <Prev />,
-    nextArrow: <Next />,
-  };
 
   const settings1 = {
     customPaging: function (i) {
@@ -65,7 +56,7 @@ export default function Sliceimg({ getArr }) {
     <div className="Sliceproduct">
       <Slider {...settings1}>
         {getArr.map((item) => (
-          <div>
+          <div key={item.id}>
             <img
               className="w-full h-full object-cover"
               src={`https://backoffice.nodemy.vn${item.attributes?.image?.data[0].attributes?.url}`}

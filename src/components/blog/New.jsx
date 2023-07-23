@@ -3,14 +3,12 @@ import { useEffect, useState } from 'react';
 import { Card } from 'antd';
 const { Meta } = Card;
 import { Link } from 'react-router-dom';
-import './New.css';
 export default function New() {
     const [arr, setArr] = useState([]);
 
     useEffect(() => {
         axios.get('https://backoffice.nodemy.vn/api/blogs?populate=*').then((res) => {
             setArr(res?.data?.data);
-            console.log(res.data.data);
         });
     }, []);
 

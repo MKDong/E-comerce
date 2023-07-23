@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ReactMarkdown from "react-markdown";
 import {
   faChevronLeft,
   faChevronRight,
@@ -59,7 +58,6 @@ export default function ListImgBanerNews() {
     <div className="w-full h-full Baner-wapper">
       <Slider {...settings}>
         {listbanner.map((item, index) => {
-          const markdown = item.attributes.content;
           return (
             <div key={index} className="SUKIEN">
               <img

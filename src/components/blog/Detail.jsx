@@ -7,7 +7,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
-import './Detail.css';
 
 export default function Detail() {
     // bai viet chi tiet
@@ -20,7 +19,6 @@ export default function Detail() {
                 const response = await axios.get(
                     `https://backoffice.nodemy.vn/api/blogs/?populate=*&filters[id][$eq]=${queryValue}`,
                 );
-                // console.log(response.data.data[0].attributes);
                 setCount(response.data.data[0].attributes);
             } catch (error) {
                 console.log(error);
@@ -30,14 +28,12 @@ export default function Detail() {
     }, []);
 
     const text = String(count.content).replaceAll('/uploads', 'https://backoffice.nodemy.vn/uploads');
-    // console.log('text', text);
 
     // bai viet lien quan
     const [arr, setArr] = useState([]);
     useEffect(() => {
         axios.get('https://backoffice.nodemy.vn/api/blogs?populate=*').then((res) => {
             setArr(res?.data?.data);
-            // console.log(res.data.data);
         });
     }, []);
     // Carousel
@@ -52,7 +48,6 @@ export default function Detail() {
     const [newSp, setNewSp] = useState([]);
     useEffect(() => {
         axios.get(`https://backoffice.nodemy.vn/api/products?populate=*`).then((res) => {
-            console.log(res?.data?.data);
             setNewSp(res?.data?.data);
         });
     }, []);

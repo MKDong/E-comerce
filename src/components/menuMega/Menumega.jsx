@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -24,14 +25,13 @@ export default function Menumega({ reloadmenumega }) {
   }, []);
   return (
     <>
-      <Link to={"/"}>Homepage</Link>
+      <Link to={"/"}>Home</Link>
       <Link to="#" className="menu ">
-        Danh mục sản phẩm
+        Danh mục 
         <div className="sub">
-          {menu.map((item) => {
+          {menu.map((item, index) => {
             return (
-              <>
-                <div>
+                <div key={index}>
                   <Link
                     to={`/${item?.attributes?.slug}`}
                     onClick={() => {
@@ -42,7 +42,6 @@ export default function Menumega({ reloadmenumega }) {
                     {item?.attributes?.name}
                   </Link>
                 </div>
-              </>
             );
           })}
         </div>

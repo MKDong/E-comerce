@@ -171,44 +171,6 @@
     .Sliceimg {
         height: 333px !important;
     }
-    .NumAndBuy {
-        color: #fff;
-        div {
-            display: flex;
-            height: auto;
-            div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                &:first-child {
-                    width: 1.25rem;
-                    height: 2.5rem;
-                    border-radius: 12rem 0 0 12rem;
-                    font-size: 1.25rem;
-                }
-                &:nth-child(2) {
-                    width: 3.125rem;
-                    height: 100%;
-                }
-                &:last-child {
-                    width: 1.25rem;
-                    height: 2.5rem;
-                    border-radius: 0rem 12rem 12rem 0;
-                    font-size: 1.25rem;
-                }
-            }
-        }
-        display: flex;
-        height: auto;
-        gap: 4rem;
-        button {
-            background: #c09857;
-            padding: 0.125rem 1.25rem;
-            border-radius: 9999rem;
-            font-weight: 900;
-        }
-    }
     .Buy {
         color: #fff;
         height: auto;

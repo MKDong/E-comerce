@@ -14,7 +14,6 @@ export default function Login(){
     const loginval=useDispatch()  
     
     const onFinish = (values) => {
-        console.log('Success:', values);
         loginval(setlogin1(login))
         setLogin(true)
         let data = JSON.stringify({
@@ -33,7 +32,6 @@ export default function Login(){
           
           axios.request(config)
           .then((response) => {
-            console.log(JSON.stringify(response.data));
             localStorage.setItem('user',JSON.stringify(response.data));
             setTimeout(()=>{
               message.success(

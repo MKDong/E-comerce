@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import './App.css'
 import {  createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout'
 import { store } from './redux/store.js'
@@ -20,7 +19,7 @@ import New from './components/blog/New'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout></Layout>,
+    element: <Layout/>,
     children: [
       {
         path: "/",
@@ -42,7 +41,7 @@ const router = createBrowserRouter([
         element:<Profile></Profile> 
     },{
         path:"/cart",
-        element:<Cart></Cart>
+        element:<Cart/>
     },
     {
       path: '/blogs',

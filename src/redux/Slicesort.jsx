@@ -22,7 +22,6 @@ export const Sortproduct = createSlice({
     },
     newarrrange1: (state, action) => {
       state.newarrrange = action.payload;
-      console.log('redux', action.payload, state.newarrrange);
     },
   },
 });

@@ -40,7 +40,6 @@ export default function SliceProduct({ getArr }) {
     prevArrow: <Prev />,
     nextArrow: <Next />,
   };
-  console.log(getArr);
   return (
     <div className="Sliceproductdetail">
       <div>CÓ THỂ BẠN THÍCH</div>
@@ -48,7 +47,7 @@ export default function SliceProduct({ getArr }) {
         {getArr.map((item) => {
           let Price = parseInt(item.attributes.price);
           return (
-            <>
+            <div key={item.id}>
               {" "}
               <div>
                 <img
@@ -67,7 +66,7 @@ export default function SliceProduct({ getArr }) {
                   </span>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </Slider>

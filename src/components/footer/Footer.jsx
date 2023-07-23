@@ -40,7 +40,7 @@ export default function Footer(){
                 </div>
                 <div className='col-12 col-md 3'>
                     <h2 className='title'>ĐẶT HÀNG ONLINE</h2>
-                        <p>"Giao hàng tận nơi"</p>
+                        <p>Giao hàng tận nơi</p>
                         <p><CheckCircleOutlined /> Đổi mới trong vòng 15 ngày nếu sản phẩm bị lỗi do nhà sản xuất</p>
                         <p><CheckCircleOutlined /> Thanh toán trực tiếp hoặc ATM, VISA, MASTER CARD</p>
 

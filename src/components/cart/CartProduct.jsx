@@ -225,8 +225,8 @@ function CartProduct() {
   const [rowsPerPage, setRowsPerPage] = React.useState(100);
   const [varCategory, setVarCategory] = React.useState(1);
   
-  console.log(selected, "selected");
-  console.log(varCategory, "varCategory");
+console.log(selected, "selected");
+  // console.log(varCategory, "varCategory");
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
@@ -237,7 +237,7 @@ function CartProduct() {
   const handleSelectAllClick = (event) => {
     if (event.target.checked) {
       const newSelected = rows.map((n) => n.id);
-      setSelected(newSelected);
+      setSelected( newSelected );
       return;
     }
     setSelected([]);
@@ -304,6 +304,7 @@ function CartProduct() {
                 const [variableCategory, setVariableCategory] =
                   React.useState(1);
                 const labelId = `enhanced-table-checkbox-${index}`;
+                console.log(variableCategory, 'variableCategory');
 
                 const incremant = () => {
                   if (variableCategory < 1) {
@@ -351,13 +352,13 @@ function CartProduct() {
                     <TableCell align="center ">
                       <AddIcon
                         onClick={incremant}
-                        className="cursor-default hover:bg-slate-400 "
-                      />
-                      <RemoveIcon
-                        onClick={decrement}
-                        className="cursor-default hover:bg-slate-400 mx-3 "
+                        className="cursor-default hover:bg-slate-400 me-3 "
                       />
                       {variableCategory > 0 ? variableCategory : row.calories}
+                      <RemoveIcon
+                        onClick={decrement}
+                        className="cursor-default hover:bg-slate-400 ms-3 "
+                      />
                     </TableCell>
                     <TableCell align="center" className="w-[100px]">
                       <img src={`https://backoffice.nodemy.vn${row.fat}`}></img>
